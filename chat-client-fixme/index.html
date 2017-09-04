@@ -1,0 +1,56 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chat with JSON!</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="lib/jquery/jquery-1.9.1.js"></script>
+    <script src="lib/moment.min.js"></script>
+  </head>
+  <body>
+
+    <div id="main">
+      <h1 class="title">Chat with JSON</h1>
+      <ul></ul>
+    </div>
+
+    <div id="controls">
+      <div id="post">
+        <h1>Post a Message</h1>
+        <form class="submit">
+          <div id="userandroom">
+            <p>
+              <label for="username" value="username">
+              <input class="usernameInput" id="userName" type="text" placeholder="username"/>
+            </p>
+          </div>
+          <div id="submitbutton">
+            <input id="submitButton" type="submit" value="submit"/>
+          </div>
+          <p>
+            <label for="userInput" value="message">
+            <input class="userInput" id="userInput" type="text" name="message" placeholder="message"/>
+          </p>
+        </form>
+      </div>
+    </div>
+    <script src="js/setup.js"></script>
+    <script>
+      // Get messages every 7.5 seconds
+      getData();
+      setInterval(getData, 7500);
+
+      $('.submit').on('submit', function(event) {
+        event.preventDefault();
+        var username = $('.usernameInput').val();
+        $('#backButton').toggle();
+        $('.title').text('Chat with JSON');
+
+        postData($('.userInput').val(), username);
+        $('.userInput').val('');
+      });
+    </script>
+  </body>
+</html>

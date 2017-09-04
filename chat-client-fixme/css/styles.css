@@ -1,0 +1,167 @@
+body {
+    background-image: -moz-radial-gradient(center, ellipse farthest-corner, #F2EAE2 0%, #ABA5A1 100%);
+    background-image: radial-gradient(ellipse farthest-corner at center, #F2EAE2 0%, #ABA5A1 100%);*/
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+}
+
+ul {
+    list-style: none;
+}
+
+#main {
+    width: 610px;
+    margin: 50px 20px 20px;
+    text-align: left;
+    padding: 20px 40px;
+    border: solid #ddd;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px; 
+    margin-left: auto;
+    margin-right: auto;
+    font: 16px/34px Helvetica;
+}
+#main a {
+    margin-top: 0;
+    font-size: 16px;
+    color: #423739;
+}
+#main a:visited {
+    font-weight: bold;
+}
+#main h1 {
+    margin-top: 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+#main ul {
+    padding-left: 20px;
+}
+#main .error {
+    border: 1px solid red;
+    background: #FDEFF0;
+    padding: 20px;
+}
+#main .success {
+    margin-top: 25px;
+}
+#main .success code {
+    font-size: 12px;
+    color: green;
+
+    line-height: 13px;
+}
+#main ul span {
+    font-size: 10px;
+    color: gray;
+    float: right;
+}
+ul {
+    list-style-type: none;
+}
+#post {
+    width: 320px;
+    margin: 10px 10px 5px;
+    text-align: left;
+    padding: 20px 40px;
+    border: solid #ddd;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px; 
+    font: 16px/24px Helvetica;
+    float: left;
+}
+#post h1 {
+    margin-top: 0;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+}
+#room h1 {
+    margin-top: 0;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+}
+#main,#post,#rooms {
+    padding: 20px 40px 20px; 
+    color: #82756f;
+    background: #f5edee;
+    border: solid #ddd;
+    border-width: 0 1px 1px 1px;
+}
+#post,#rooms {
+    height: 250px;
+    margin: 20px;
+
+}
+#submitButton, #backButton  {
+    color: #f5edee;
+    background-color: #A69894;
+    float: right;
+    width: 100px;
+    height: 40px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; 
+    font-size: 18px;
+    font-weight: bold;
+    outline: 1px dashed #f5edee;
+    outline-offset: -5px;
+}
+#error {
+    font-size: 30px;
+    font-weight: bolder;
+    color: #423739;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 0 auto;
+}
+#controls {
+    width: 710px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#rooms {
+    width: 180px;
+    margin: 10px 0 5px;
+    text-align: left;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px; 
+    font: 16px/24px Helvetica;
+    float:left;
+}#rooms a {
+    margin-top: 0;
+    font-size: 16px;
+    color: #423739;
+}
+#rooms a:visited {
+    font-weight: bold;
+}
+.usernameInput, .roomnameInput{
+    width: 120px;
+    padding: 8px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; 
+}
+.userInput{
+    width: 280px;
+    height: 60px;
+    padding: 10px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px; 
+}
+.highlight {
+    font-weight: bold;
+}
+#userandroom,#submitbutton{
+    width: 150px;
+    float:left;
+}
