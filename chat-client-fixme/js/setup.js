@@ -21,6 +21,7 @@ var getData = function() {
   });
 };
 
+
 // Here we sort the server messages by 'Created at' and send them to displayData
 var processData = function(data) {
   var sortedData = data.results.sort(function(a, b) {
@@ -121,3 +122,17 @@ var postData = function(message, username) {
     }
   });
 };
+
+// My code is here 
+
+var sendData= function(message){
+
+   $.ajax({
+    url: 'http://parse.shared.hackreactor.com/chatterbox/classes/messages';
+    contentType: "POST";
+    success: function(data){
+      // I should clear msg input here first
+      //then update the msg 
+    };
+    error: function(data) {
+   console.error('chatterbox: Failed to send message', error);}})

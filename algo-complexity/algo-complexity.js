@@ -23,7 +23,7 @@ var retrieve = function(key) {
 // Problem 2: sortedArrayContainsItem with regard to the length of the passed-in array
 
 /*
- Complexity: -This function has [nlog(n)]
+ Complexity: -This function has [Olog(n)]
  */
 
 
