@@ -105,6 +105,8 @@ var displayData = function(data, user) {
   });
 };
 
+
+// this is the function that responsible for sending messages to the server.
 var postData = function(message, username) {
   $.ajax({
     url: SERVER_URL,
@@ -115,6 +117,8 @@ var postData = function(message, username) {
       text: message
     }),
     success: function(data) {
+      // I should make my changes here
+      getData();
       console.log('Success!', data);
     },
     error: function(data) {
@@ -123,16 +127,3 @@ var postData = function(message, username) {
   });
 };
 
-// My code is here 
-
-var sendData= function(message){
-
-   $.ajax({
-    url: 'http://parse.shared.hackreactor.com/chatterbox/classes/messages';
-    contentType: "POST";
-    success: function(data){
-      // I should clear msg input here first
-      //then update the msg 
-    };
-    error: function(data) {
-   console.error('chatterbox: Failed to send message', error);}})
